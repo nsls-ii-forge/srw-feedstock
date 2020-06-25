@@ -1,0 +1,15 @@
+diff --git a/cpp/gcc/Makefile b/cpp/gcc/Makefile
+index 33c7075..910e41a 100644
+--- a/cpp/gcc/Makefile
++++ b/cpp/gcc/Makefile
+@@ -11,8 +11,8 @@ MODE ?= 0
+ 
+ #CC  = gcc
+ #CXX = g++
+-CC  = cc
+-CXX = c++
++# CC  = cc
++# CXX = c++
+ 
+ SRW_SRC_DEF=	-D_GNU_SOURCE -D__USE_XOPEN2K8 -DFFTW_ENABLE_FLOAT -D_GM_WITHOUT_BASE -DSRWLIB_STATIC -DNO_TIMER -DANSI_DECLARATORS -DTRILIBRARY -DLINUX
+ CFLAGS=	-O3 -fPIC -I$(SRW_SRC_GEN_DIR) -I$(SRW_SRC_LIB_DIR) -I$(SH_SRC_PARSE_DIR) -I$(SH_SRC_GEN_MATH_DIR) $(SRW_SRC_DEF) 
